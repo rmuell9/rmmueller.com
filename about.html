@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <style>
+        #bgColorPicker {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+        }
+        body {
+            background-color: salmon;
+            color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+</head>
+<body> 
+    <h2><b>about</b></h2>
+    <h4><a href = "index.html">home</a></h4>
+
+    
+    <label for="bgColorPicker"></label>
+    <input type="color" id="bgColorPicker" name="bgColorPicker">
+        
+    <script>
+        document.getElementById('bgColorPicker').addEventListener('input', function(event) {
+            document.body.style.backgroundColor = event.target.value;
+        });
+    </script>
+</body>
+</html>
