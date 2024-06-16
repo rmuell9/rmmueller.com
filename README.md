@@ -3,11 +3,5 @@ Index file in production
 
 Want to add:
 
-optimal risky portfolio generator
-stock screener
-efficient frontier
-news (signal, not noise)
-blog
-links to social media in about 
-
+optimal risky portfolio generator, stock screener, blog, about section details
 
