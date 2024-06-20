@@ -13,27 +13,46 @@
             z-index: 1000;
         }
         body {
-            background-color: salmon;
+            background-color: rgb(156, 102, 255);
             color: white;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            width: 66.66%;
         }
     </style>
 </head>
 
 <body>
-    <center><h2><b>welcome</b></h2></center>
-    <center><h4>
-        <a href = "./about">about</a>&nbsp;&nbsp;&nbsp;
-        <a href = "./heatmap">heat map</a>&nbsp;&nbsp;&nbsp;
-        <a href = "./threebody">three body problem</a>&nbsp;&nbsp;&nbsp;
-    </h4></center>
-    <p>i am testing my website, please<br>
-        make sure everything works<br>
-        and looks good
-    </p>
+    <div class="container">
+        <center><h2><b>welcome</b></h2></center>
+        <center><h4>
+            <a href="./about">about</a>&nbsp;&nbsp;&nbsp;
+            <a href="./projects">projects</a>&nbsp;&nbsp;&nbsp;
+        </h4></center>
+        <h3><b>dot plan</b></h3>
+        <p>i am making this website to get better at html and css and display some of my other projects
+        </p>
+        <h3>TO DO:</h3>
+        <ul>
+            <li>finish about page</li>
+            <li>do more projects to add to projects page</li>
+            <li>get better at python</li>
+            <li>learn to not lose money with call/put options</li>
+            <li>find a color to stick with for the background</li>
+        </ul>
+        <h1><b>BLOG</b></h1>
+        <p> each post will be written in paragraph form and each entry title will be in bold and h2 title format</p>
+        <h2><b>JUNE 20, 2024</b></h2>
+        <p>today i'm working on this website at work and will most likely write some stupid options on Nvidia and Palantir that will make me lose money. </p>
 
-    <label for="bgColorPicker"></label>
-    <input type="color" id="bgColorPicker" name="bgColorPicker">
+        <label for="bgColorPicker"></label>
+        <input type="color" id="bgColorPicker" name="bgColorPicker">
+    </div>
         
     <script>
         document.getElementById('bgColorPicker').addEventListener('input', function(event) {
