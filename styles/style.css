@@ -19,3 +19,13 @@ li {
 a {
     color: lightblue;
 }
+h5 {
+    color: lightslategray
+}
+footer {
+    position: fixed;  
+    bottom: 5px;  
+    text-align: center;
+    color: lightslategray;
+    font-size: 10px;
+}
