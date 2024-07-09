@@ -29,3 +29,7 @@ footer {
     color: lightslategray;
     font-size: 10px;
 }
+summary {
+    font-weight: bold;
+    font-size: 24px;
+}
