@@ -10,21 +10,6 @@ body {
   margin-right: auto;
 }
 
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: #2e3440;
-    color: #d8dee9;
-  }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      color: #d8dee0;
-    }
-}
 
 b {
   font-weight: 900;
@@ -61,14 +46,14 @@ h6 {
 }
 
 a {
-  color: #e0a96d;
-  text-decoration: none;
-  border-bottom: 2px solid #e0a96d;
+  color: #a78bfa;  /* Vibrant purple */
+  border-bottom: 2px solid #a78bfa;
+  text-decoration: none;  /* Add this line */
 }
 
 a:hover {
-  color: #f4a261;
-  border-color: #f4a261;
+  color: #c4b5fd;  /* Lighter vibrant purple on hover */
+  border-color: #c4b5fd;
 }
 
 ul,
@@ -79,9 +64,9 @@ ol {
 code {
   background-color: #3c3c42;
   border-radius: 6px;
-  color: #e9c46a;
+  color: #a78bfa;
   padding: 0.4em 0.6em;
-  font-family: "Courier New", monospace;
+  font-family: JetbrainsMono Nerd Font;
 }
 
 pre code {
@@ -143,4 +128,35 @@ img {
 
 ::-webkit-scrollbar-corner {
   background: #1f1c25;
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #2e3440;    
+        color: #d8dee9;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #d8dee9;
+    }
+
+    a {
+        color: #e0a96d;  /* Default link color (golden/orange) */
+        border-bottom: 2px solid #e0a96d;  /* Underline color matches link */
+        text-decoration: none;  /* Add this line */
+    }
+
+    a:hover {
+        color: #f4a261;  /* Hover state color (lighter orange) */
+        border-color: #f4a261;  /* Hover underline color */
+    }
+
+    code {
+        color: #e0a96d;
+    }
 }

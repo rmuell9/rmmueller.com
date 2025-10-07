@@ -1,7 +1,7 @@
 # Home
 
 
-## Hey so uhhhh welcome to my site. Not much on here right now, maybe if you look at this blank screen something will pop into your mind.
+This site is still being built, getting onto HTTPS is (maybe) on the agenda.
 
 
-
+[Contact](/contact)
