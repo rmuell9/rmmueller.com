@@ -10,6 +10,22 @@ body {
   margin-right: auto;
 }
 
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #2e3440;
+    color: #d8dee9;
+  }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #d8dee0;
+    }
+}
+
 b {
   font-weight: 900;
 }
