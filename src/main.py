@@ -16,7 +16,8 @@ def main():
             for thing in os.listdir(dest):
                 target = dest + thing
                 if os.path.isfile(target):
-                    os.remove(target)
+                    if thing != "CNAME":
+                        os.remove(target)
                 elif os.path.isdir(target):
                     shutil.rmtree(target)
             if os.listdir(copy) is not None:
@@ -32,7 +33,6 @@ def main():
                 dir_to_public(target + "/", dest + thing + "/")
 
     def generate_page(from_path, template_path, dest_path, basepath):
-        print(f"Generating page from {from_path} to {dest_path} using {template_path}")
         md_content = open(from_path).read()
         template_content = open(template_path).read()
         html_string = conversion.markdown_to_html_node(md_content).to_html()
