@@ -4,11 +4,22 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ Title }}</title>
-    <link rel="icon" type="image/png" href="/images/island.png" />
+    <link rel="shortcut icon" type="image/png" href="/images/island.png" />
     <link href="/index.css" rel="stylesheet" />
   </head>
+    <body>
 
-  <body>
+    <script src="/favicons.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        favicons();
+    });
+    </script>
+
     <article>{{ Content }}</article>
+
   </body>
 </html>
+
+
+
