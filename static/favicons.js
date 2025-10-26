@@ -6,30 +6,31 @@ function favicons () {
 
 	/* Define a list of "services", each being a pair of favicon URL and the tab title to show. */
 	this.services = {
-		/* Reddit */
-		reddit: () => {
-			let title = "Reddit - Dive into anything";
-			let favicon = "/images/favicons/reddit.png";
+
+        gsearch1: () => {
+            let title = "i love Matthew Mueller - Google Search"
+			let favicon = "/images/favicons/google.ico";
 			return {
 	  			title, favicon
 			}
-		},
-		/* X, formerly known as Twitter */
-		x: () => {
-			let title = "X. It's what's happening / X";
-			let favicon = "/images/favicons/x.ico";
+        },
+
+        gsearch2: () => {
+            let title = "how to tie my shoes - Google Search"
+			let favicon = "/images/favicons/google.ico";
 			return {
 	  			title, favicon
 			}
-		},
-		/* Bluesky */
-		bluesky: () => {
-			let title = "Discover - Bluesky";
-			let favicon = "/images/favicons/bluesky.png";
+        },
+
+        fbi: () => {
+            let title = "FBI — Federal Bureau of Investigation"
+			let favicon = "/images/favicons/fbi.png";
 			return {
 	  			title, favicon
 			}
-		},
+        },
+
 		/* Wikipedia */
 		wikipedia: () => {
 			let title = "Wikipedia";
@@ -38,14 +39,7 @@ function favicons () {
 	  			title, favicon
 			}
 		},
-		/* TikTok, where the hip kids are hanging out */
-		tiktok: () => {
-			let title = "Explore - Find your favourite videos on TikTok";
-			let favicon = "/images/favicons/tiktok.ico";
-			return {
-				title, favicon
-			}
-		},
+
 		/* Facebook, your grandma is most likely here */
 		facebook: () => {
 			/* Pick a random notification number between 1 and 100 */
@@ -71,11 +65,10 @@ function favicons () {
 	/* Those "services" are enabled, which means the web browser tab can change
 		favicon/title using their data. */
 	this.enabledServices = [
-		'x',
-		'reddit',
-		'bluesky',
+        'fbi',
+        'gsearch1',
+        'gsearch2',
 		'instagram',
-		'tiktok',
 		'facebook',
 		'wikipedia'
 	];
