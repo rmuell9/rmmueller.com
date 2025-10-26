@@ -10,6 +10,14 @@ body {
   margin-right: auto;
 }
 
+nav a {
+    display: inline-block;
+}
+
+a.logo {
+  border-bottom: none;
+}
+
 
 b {
   font-weight: 900;
@@ -56,7 +64,12 @@ a:hover {
   border-color: #c4b5fd;
 }
 
-ul,
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 ol {
   padding-left: 30px;
 }
@@ -96,9 +109,9 @@ blockquote {
 img {
   max-width: 100%;
   height: auto;
-  border-radius: 6px;
-  border: 3px solid #3c3c42;
-  box-shadow: 3px 3px 6px #000;
+  /* border-radius: 6px; */
+  /* border: 3px solid #3c3c42; */
+  /* box-shadow: 3px 3px 6px #000; */
 }
 
 ::-webkit-scrollbar {
