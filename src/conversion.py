@@ -104,11 +104,11 @@ def split_nodes_link(old_nodes):
 def text_to_textnodes(text):
     input = [TextNode(text, TextType.TEXT)]
     bold = split_nodes_delimiter(input, "**", TextType.BOLD)
-    italic = split_nodes_delimiter(bold, "_", TextType.ITALIC)
-    code = split_nodes_delimiter(italic, "`", TextType.CODE)
+    code = split_nodes_delimiter(bold, "`", TextType.CODE)
     image = split_nodes_image(code)
     link = split_nodes_link(image)
-    return link
+    italic = split_nodes_delimiter(link, "_", TextType.ITALIC)
+    return italic
 
 
 def markdown_to_blocks(markdown):
