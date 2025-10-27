@@ -5,8 +5,5 @@
 My main _career_ ambition is to monetize leading-edge scientific research through technology.
 
 
-Industries that I find most attractive are medical technology, proprietary trading, and nuclear energy.
-
-
 I am constantly learning in my free time, and my primary interests are in mathematics and philosophy.
 If you would like to work together, please contact me.
