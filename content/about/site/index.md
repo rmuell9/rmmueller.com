@@ -9,7 +9,7 @@ written in Python. One could pretentiously describe it as an isomorphism from
 markdown to html.
 
 The title on the tab bar changes because there is a 
-[Javascript program](https://sizeof.cat/post/tricks-with-web-browser-tabs/) 
+[Javascript program](https://github.com/rmuell9/rmmueller.com/blob/main/static/favicons.js) 
 attached to this website. It is harmless.
 
 ### Why?
