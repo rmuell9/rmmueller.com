@@ -21,8 +21,14 @@ body {
     100% { opacity: 1; }
 }
 
+.site-head {
+    border-bottom: 2px solid;
+    color: #cdd6f4;
+}
+
 nav a {
     display: inline-block;
+    unicode-bidi: isolate;
 }
 
 a.logo {
@@ -81,14 +87,16 @@ a:hover {
   border-color: #c4b5fd;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+@media (min-width: 400px) {
+    ul.wrap {
+        column-count: 2;
+    }
 }
 
-ol {
-  padding-left: 30px;
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0px 0px 42px;
 }
 
 code {
@@ -171,6 +179,10 @@ img {
     h3,
     h4,
     h5 {
+        color: #d8dee9;
+    }
+
+    .site-head{
         color: #d8dee9;
     }
 
