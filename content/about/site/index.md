@@ -8,6 +8,10 @@ Through a [static site generator](https://github.com/rmuell9/static-site-generat
 written in Python. One could pretentiously describe it as an isomorphism from
 markdown to html.
 
+The title on the tab bar changes because there is a 
+[Javascript program](https://sizeof.cat/post/tricks-with-web-browser-tabs/) 
+attached to this website. It is harmless.
+
 ### Why?
 
 Just to test out ideas on the web whenever I feel like it. If you're a potential
