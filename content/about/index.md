@@ -1,6 +1,6 @@
 # About
 
-[About This Site](about-site/)
+[About This Site](site/)
 
 ###### Updated on Oct. 26, 2025
 

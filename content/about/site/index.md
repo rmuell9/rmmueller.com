@@ -7,3 +7,10 @@
 Through a [static site generator](https://github.com/rmuell9/static-site-generator)
 written in Python. One could pretentiously describe it as an isomorphism from
 markdown to html.
+
+### Why?
+
+Just to test out ideas on the web whenever I feel like it. If you're a potential
+employer (especially at a big company), here's what I have for you:
+
+![WIPED](/images/mib.png)
