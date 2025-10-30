@@ -151,10 +151,15 @@ def markdown_to_html_node(markdown):
             text = block.lstrip("# ").strip()
             textnodes = text_to_textnodes(text)
             htmlnodes = [text_node_to_html_node(node) for node in textnodes]
-            children.append(ParentNode(f"h{level}", htmlnodes))
+            if level == 1:
+                children.append(ParentNode("h1", htmlnodes, 
+                                         {"class": "post-content-title"}))
+            else:
+                children.append(ParentNode(f"h{level}", htmlnodes))
         elif blocktype == BlockType.CODE:
             text = block.strip("```").strip()
-            children.append(ParentNode("pre", [ParentNode("code", [LeafNode(None, text)])]))
+            children.append(ParentNode("pre", [ParentNode("code", 
+                                              [LeafNode(None, text)])]))
         elif blocktype == BlockType.QUOTE:
             text = "\n".join(line.lstrip("> ") for line in block.split("\n"))
             textnodes = text_to_textnodes(text)
