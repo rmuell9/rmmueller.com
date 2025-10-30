@@ -9,6 +9,10 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+footer {
+    margin: 42px 0px 42px;
+    border-top: 2px solid;
+}
 .post-content-title:after {
     animation: blink-animation .9s infinite;
     content: "█";
@@ -23,7 +27,6 @@ body {
 
 .site-head {
     border-bottom: 2px solid;
-    color: #cdd6f4;
 }
 
 nav a {
@@ -179,10 +182,6 @@ img {
     h3,
     h4,
     h5 {
-        color: #d8dee9;
-    }
-
-    .site-head{
         color: #d8dee9;
     }
 
