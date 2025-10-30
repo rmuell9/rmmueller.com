@@ -1,5 +1,7 @@
 # About
 
+[About This Site](about-site/)
+
 ###### Updated on Oct. 26, 2025
 
 My main _career_ ambition is to monetize leading-edge scientific research through technology.
