@@ -186,4 +186,5 @@ def extract_title(markdown):
         for line in markdown.split("\n"):
             if line[:2] == target:
                return line.lstrip(target)
-    raise Exception("No title")
+    # raise Exception("No title")
+    return "Home"
