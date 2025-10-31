@@ -2,7 +2,7 @@
 
 [About This Site](site/)
 
-###### Updated on Oct. 26, 2025
+![About](/images/gldcoast.png)
 
 My main _career_ ambition is to monetize leading-edge scientific research through technology.
 

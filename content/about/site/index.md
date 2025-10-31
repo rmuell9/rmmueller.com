@@ -1,6 +1,7 @@
 # About This Site
 
-###### Updated on Oct. 30, 2025
+
+![About This Site](/images/chinight.png)
 
 ### How does it exist?
 
