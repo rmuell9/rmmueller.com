@@ -1,7 +1,36 @@
+:root {
+    --font: "JetbrainsMono Nerd Font", "Hack Nerd Font", "SF Mono", 
+            "Monaco", "Cascadia Code", "Roboto Mono", "Fira Code", 
+            "Source Code Pro", "Consolas", "Menlo", "DejaVu Sans Mono", 
+            "Ubuntu Mono", "Courier New", monospace;
+}
+
+@media (prefers-color-scheme: light) {
+    /* NORD */
+    :root {
+        --color-primary: #d8dee9;
+        --color-bg: #2e3440;
+        --color-a: #e0a96d;
+        --color-bor: #4C566A;
+        --color-code: #3c3c42;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    /* TOKYO NIGHT */
+    :root {
+        --color-primary: #cdd6f4;
+        --color-bg: #1a1b26;
+        --color-a: #a78bfa;
+        --color-bor: #3b4261;
+        --color-code: #3c3c42;
+    }
+}
+
 body {
-  background-color: #1a1b26;
-  color: #cdd6f4;
-  font-family: JetbrainsMono Nerd Font;
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+  font-family: var(--font);
   line-height: 1.7;
   margin: 0;
   padding: 20px;
@@ -13,12 +42,11 @@ body {
 footer {
     margin: 70px 0px 42px;
     border-top: 2px solid;
-    border-color: #3b4261;
+    border-color: var(--color-bor);
 }
 
 header {
     font-size: 1.20rem;
-    max-width: 720px;
 }
 
 .site-head {
@@ -26,7 +54,7 @@ header {
     border-bottom: 2px solid;
     display: block;
     grid-template-columns: 1fr auto 1fr;
-    border-color: #3b4261;
+    border-color: var(--color-bor);
     margin-bottom: 70px;
 }
 
@@ -42,6 +70,12 @@ a.logo:hover {
 a.logo {
   border-bottom: none;
   margin-left: -12px;
+}
+
+.site-head a.active {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: black;
 }
 
 ul {
@@ -60,7 +94,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #cdd6f4;
+  color: var(--color-primary);
   margin-top: 24px;
   margin-bottom: 16px;
   text-shadow: 2px 2px 4px #000;
@@ -89,22 +123,23 @@ h6 {
 }
 
 a {
-  color: #a78bfa;
-  border-bottom: 3px solid #a78bfa;
+  color: var(--color-a);
+  border-bottom: 2px solid var(--color-a);
   text-decoration: none;
 }
 
 a:hover {
-  background-color: white;
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
   color: black;
 }
 
 code {
-  background-color: #3c3c42;
+  background-color: var(--color-code);
   border-radius: 6px;
-  color: #a78bfa;
+  color: var(--color-a);
   padding: 0.4em 0.6em;
-  font-family: JetbrainsMono Nerd Font;
+  font-family: var(--font);
 }
 
 pre code {
@@ -112,7 +147,6 @@ pre code {
 }
 
 pre {
-  background-color: #3c3c42;
   border-radius: 6px;
   padding: 1em;
   overflow: auto;
@@ -142,6 +176,7 @@ img {
 .post-content-title:after {
     animation: blink-animation .9s infinite;
     content: "█";
+    color: var(--color-primary);
     padding-left: 2px;
 }
 
@@ -150,39 +185,3 @@ img {
     50% { opacity: 0; }
     100% { opacity: 1; }
 }
-
-@media (prefers-color-scheme: light) {
-
-    body {
-        background-color: #2e3440;    
-        color: #d8dee9;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        color: #d8dee9;
-    }
-
-    a {
-        color: #e0a96d;
-        border-bottom: 3px solid #e0a96d;
-        text-decoration: none;
-    }
-
-    code {
-        color: #e0a96d;
-    }
-
-    footer {
-        border-color: #4C566A;
-        }
-
-    .site-head {
-        border-color: #4C566A;
-    }
-}
-

@@ -1,4 +1,5 @@
 import os
+import re
 import sys
 import shutil
 import conversion
@@ -37,23 +38,41 @@ def main():
         template_content = open(template_path).read()
         html_string = conversion.markdown_to_html_node(md_content).to_html()
         title = conversion.extract_title(md_content)
-        res = template_content.replace("{{ Title }}", title).replace("{{ Content }}", html_string).replace('href="/', f'href="{basepath}').replace('src="/', f'src="{basepath}')
+        
+        # Extract directory name from the source path
+        dir_path = os.path.dirname(from_path)
+        path_parts = dir_path.split('/')[1:]  # Remove 'content' prefix
+        
+        # Replace active class for matching directory
+        if path_parts and path_parts[0]:
+            # Check each part of the path for matching nav links
+            for i, part in enumerate(path_parts):
+                if part:
+                    pattern = f'<li><a href="/{part}">'
+                    replacement = f'<li><a class="active" href="/{part}">'
+                    template_content = re.sub(pattern, replacement, 
+                                            template_content)
+        
+        res = template_content.replace("{{ Title }}", title).replace(
+            "{{ Content }}", html_string).replace('href="/', 
+            f'href="{basepath}').replace('src="/', f'src="{basepath}')
         open(dest_path, "x").write(res)
 
-    def generate_page_rec(dir_path_content, template_path, dest_dir_path, basepath):
+    def generate_page_rec(dir_path_content, template_path, dest_dir_path, 
+                         basepath):
         if not os.path.exists(dest_dir_path):
             os.makedirs(dest_dir_path)
-            
         for thing in os.listdir(dir_path_content):
             source_path = os.path.join(dir_path_content, thing)
             if os.path.isfile(source_path) and thing.endswith(".md"):
                 filename = thing[:-3] + ".html"
                 dest_file_path = os.path.join(dest_dir_path, filename)
-                generate_page(source_path, template_path, dest_file_path, basepath)
+                generate_page(source_path, template_path, dest_file_path, 
+                            basepath)
             elif os.path.isdir(source_path):
                 dest_sub_dir = os.path.join(dest_dir_path, thing)
-                generate_page_rec(source_path, template_path, dest_sub_dir, basepath)
-
+                generate_page_rec(source_path, template_path, dest_sub_dir, 
+                                basepath)
 
     public("static/")
     generate_page_rec("content/", "template.html", "docs/", basepath)
