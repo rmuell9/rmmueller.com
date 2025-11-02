@@ -150,7 +150,8 @@ ul {
 }
 
 b {
-  font-weight: 900;
+  background-color: var(--color-a);
+  color: var(--color-bg);
 }
 
 h1,
