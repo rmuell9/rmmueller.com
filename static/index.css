@@ -77,6 +77,13 @@ header {
     margin: 0 0 42px
 }
 
+@media (max-width: 500px) {
+    ul.navigation {
+        -moz-column-count:2;
+        column-count: 2
+    }
+}
+
 @media (min-width: 500px) {
     ul.navigation {
         -moz-column-count:3;
