@@ -10,7 +10,6 @@
 
 
 @media (prefers-color-scheme: dark) {
-    /* TOKYO NIGHT */
     :root {
         --color-primary: #cdd6f4;
         --color-bg: #1a1b26;
@@ -110,7 +109,7 @@ nav.navigation>ul.navigation>li>a {
     line-height: 25px;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap
+    white-space: nowrap;
 }
 
 .site-head {
@@ -144,10 +143,14 @@ nav.navigation>ul.navigation>li>a {
     color: var(--color-bg);
 }
 
-ul {
+.site-head ul {
   list-style-type: none;
   padding: 0;
   margin: 0px 0px 42px;
+}
+
+ul {
+    list-style-type: square;
 }
 
 b {
@@ -262,6 +265,7 @@ img {
 .strip {
   overflow: hidden;
   position: relative;
+  background-image: url('/images/favicon.png');
   background-size: 82px 82px;
   animation-iteration-count: infinite;
   animation-direction: alternate;
