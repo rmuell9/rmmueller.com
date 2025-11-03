@@ -2,9 +2,6 @@
 
 **Recommendation:** [La Rochefoucald - Maxims](https://www.goodreads.com/book/show/797329.Maxims)
 
-![Quotes](/images/ren.png)
-
-
 
 > Men in general are quick to believe that which they wish to be true.
 
