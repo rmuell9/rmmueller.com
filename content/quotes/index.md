@@ -11,3 +11,8 @@
 > No natural humanity has ever existed yet... To be natural means, to dare to be as immoral as Nature is.
 
 -Fredrich Nietzsche _The Will to Power_
+
+
+> A mathematician is a device for turning coffee into theorems.
+
+-Paul Erdos
