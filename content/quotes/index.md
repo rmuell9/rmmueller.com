@@ -16,3 +16,11 @@
 > A mathematician is a device for turning coffee into theorems.
 
 -Paul Erdos
+
+> Thought is only a flash between two long nights, but this flash is everything.
+
+-Henri Poincare
+
+> You rule because you hold yourself inferior to the gods.
+
+-Horace
