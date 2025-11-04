@@ -8,6 +8,11 @@
 -Julius Caesar
 
 
+> Thought is only a flash between two long nights, but this flash is everything.
+
+-Henri Poincare
+
+
 > No natural humanity has ever existed yet... To be natural means, to dare to be as immoral as Nature is.
 
 -Fredrich Nietzsche _The Will to Power_
@@ -17,9 +22,6 @@
 
 -Paul Erdos
 
-> Thought is only a flash between two long nights, but this flash is everything.
-
--Henri Poincare
 
 > You rule because you hold yourself inferior to the gods.
 
