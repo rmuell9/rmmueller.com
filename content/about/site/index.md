@@ -12,10 +12,3 @@ markdown to html.
 The title on the tab bar changes because there is a 
 [JavaScript program](https://github.com/rmuell9/rmmueller.com/blob/main/static/favicons.js) 
 attached to this website. It is harmless.
-
-### Why?
-
-Just to test out ideas on the web whenever I feel like it. If you're a potential
-employer (especially at a big company), here's what I have for you:
-
-![WIPED](/images/mib.png)
