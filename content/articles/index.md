@@ -1,3 +1,0 @@
-# Articles
-
-[Shannon Entropy](entropy/)
