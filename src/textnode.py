@@ -8,6 +8,7 @@ class TextType(Enum):
     CODE = "`Code text`"
     LINK = "[anchor text](url)"
     IMAGE = "![alt text](url)"
+    CROSSED = "~~Crossed~~"
 
 
 class TextNode():

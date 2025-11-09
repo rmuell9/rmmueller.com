@@ -24,10 +24,13 @@ def text_node_to_html_node(text_node):
     elif text_node.text_type == TextType.IMAGE:
         return LeafNode("img", "", {"src": text_node.url, "alt": text_node.text})
 
+    elif text_node.text_type == TextType.CROSSED:
+        return LeafNode("s", text_node.text)
+
     raise ValueError("Invalid TextType")
 
 
-#Create TextNodes from raw markdown strings
+# Create TextNodes from raw markdown strings
 def split_nodes_delimiter(old_nodes, delimiter, text_type):
     new_nodes = []
     for node in old_nodes:
@@ -49,7 +52,7 @@ def split_nodes_delimiter(old_nodes, delimiter, text_type):
     return new_nodes
 
 
-#Convert raw markdown to alt and href touples for images and links
+# Convert raw markdown to alt and href touples for images and links
 def extract_markdown_images(text):
     images = re.findall(r"!\[(.*?)\]\((.*?)\)", text)
     return images
@@ -58,9 +61,8 @@ def extract_markdown_images(text):
 def extract_markdown_links(text):
     images = re.findall(r"\[(.*?)\]\((.*?)\)", text)
     return images
-#Split raw markdown text into TextNodes based on images and links
 
-
+# Split raw markdown text into TextNodes based on images and links
 def split_nodes_image(old_nodes):
     new_nodes = []
     for node in old_nodes:
@@ -69,17 +71,16 @@ def split_nodes_image(old_nodes):
         else:
             current_text = node.text
             images = extract_markdown_images(current_text)
-            
             for alt_text, url in images:
                 parts = current_text.split(f"![{alt_text}]({url})", 1)
                 if parts[0]:
                     new_nodes.append(TextNode(parts[0], TextType.TEXT))
                 new_nodes.append(TextNode(alt_text, TextType.IMAGE, url))
                 current_text = parts[1]
-            
             if current_text:
                 new_nodes.append(TextNode(current_text, TextType.TEXT))
     return new_nodes
+
 
 def split_nodes_link(old_nodes):
     new_nodes = []
@@ -89,17 +90,16 @@ def split_nodes_link(old_nodes):
         else:
             current_text = node.text
             links = extract_markdown_links(current_text)
-            
             for link_text, url in links:
                 parts = current_text.split(f"[{link_text}]({url})", 1)
                 if parts[0]:
                     new_nodes.append(TextNode(parts[0], TextType.TEXT))
                 new_nodes.append(TextNode(link_text, TextType.LINK, url))
                 current_text = parts[1]
-            
             if current_text:
                 new_nodes.append(TextNode(current_text, TextType.TEXT))
     return new_nodes
+
 
 def text_to_textnodes(text):
     input = [TextNode(text, TextType.TEXT)]
@@ -108,7 +108,8 @@ def text_to_textnodes(text):
     image = split_nodes_image(code)
     link = split_nodes_link(image)
     italic = split_nodes_delimiter(link, "_", TextType.ITALIC)
-    return italic
+    crossed = split_nodes_delimiter(italic, "~~", TextType.CROSSED)
+    return crossed
 
 
 def markdown_to_blocks(markdown):

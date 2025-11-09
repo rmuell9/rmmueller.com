@@ -7,4 +7,5 @@ class BlockType(Enum):
     QUOTE = ">Quote"
     UNORDEREDLIST = "- Unordered List"
     ORDEREDLIST = "1. Ordered List"
+    CROSSED = "~~Crossed~~"
     PARAGRAPH = "Default Paragraph"

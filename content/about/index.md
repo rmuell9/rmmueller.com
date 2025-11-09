@@ -5,10 +5,10 @@
 ![About](/images/gldcoast.png)
 
 My broad career interest is implementing leading-edge quantitative and scientific theory
-in industry. In application this means being involved with technology and proprietary trading.
+in industry. In application this means being involved with technology and proprietary trading, or related.
 
 
-Right now i'm working on
+Right now I'm working on
 
 - [Topology](https://a.co/d/6HTIRlD)
 - [Modern gravitation](https://a.co/d/0vBQorI)

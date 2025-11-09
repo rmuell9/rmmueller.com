@@ -1,0 +1,31 @@
+@media (prefers-color-scheme: light) {
+    :root {
+        --color-primary: #333333;
+        --color-bg: #f7f3e9;
+        --color-a: #e0a96d;
+        --color-bor: #b8b8b8;
+        --color-code: #d3d3d3;
+    }
+}
+
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-primary: #cdd6f4;
+        --color-bg: #1a1b26;
+        --color-a: #a78bfa;
+        --color-bor: #3b4261;
+        --color-code: #3c3c42;
+    }
+}
+
+
+/* GENERAL VARIABLES */
+:root {
+    --font: "JetbrainsMono Nerd Font", "Hack Nerd Font", "SF Mono", 
+            "Monaco", "Cascadia Code", "Roboto Mono", "Fira Code", 
+            "Source Code Pro", "Consolas", "Menlo", "DejaVu Sans Mono", 
+            "Ubuntu Mono", "Courier New", monospace;
+    --radius: 4px;
+    --color-a: var(--color-primary);
+}

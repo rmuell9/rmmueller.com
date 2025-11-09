@@ -1,4 +1,4 @@
-This site is still being built, getting onto HTTPS is **maybe** on the agenda.
+This site is still being built, ~~getting onto HTTPS is maybe on the agenda.~~
 
 I'm currently experimenting with site looks and features.
 
@@ -6,4 +6,3 @@ I'm currently experimenting with site looks and features.
 
 - Implement multi-line code blocks
 - Implement LaTex blocks
-- Post article on intuitively understanding entropy in information theory
