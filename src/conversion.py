@@ -205,10 +205,13 @@ def markdown_to_html_node(markdown):
             children.append(ParentNode("p", htmlnodes))
     return ParentNode("div", children)
 
+
 def extract_title(markdown):
     target = "# "
     if target in markdown:
         for line in markdown.split("\n"):
             if line[:2] == target:
                return line.lstrip(target)
-    return "Home"
+            if line.startswith("<!-- # ") and line.endswith(" -->"):
+                return line[7:-4]
+    raise Exception("no title")

@@ -1,5 +1,6 @@
 @import url('style/variables.css');
 @import url('style/glitch.css');
+@import url('style/blinking.css');
 @import url('style/posts.css');
 @import url('style/site-head.css');
 @import url('style/site-foot.css');
@@ -21,27 +22,6 @@ footer {
     border-top: 2px solid var(--color-bor);
 }
 
-.info {
-    text-align: left;
-}
-
-.badges {
-    border-top: 2px solid var(--color-bor);
-    margin: 32px 0 0;
-    /* display: flex; */
-}
-
-.square-badge {
-    margin: 42px 0 0;
-    height: 34px;
-    width: 34px;
-}
-
-.rec-badge {
-    margin: 42px 0 0;
-    height: 34px;
-    width: 88px;
-}
 
 header {
     font-size: 1.20rem;
@@ -138,32 +118,6 @@ img {
   /* box-shadow: 3px 3px 6px #000; */
 }
 
-.post-content-title:after {
-    animation: blink-animation .9s infinite;
-    content: "█";
-    color: var(--color-primary);
-    padding-left: 2px;
-}
-
-@keyframes blink-animation {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
 s {
     text-decoration-thickness: 2px;
 }
-
-@media (prefers-color-scheme: dark) {
-    #qrcode>.qrcode-light {
-        display:none
-    }
-}
-
-@media (prefers-color-scheme: light) {
-    #qrcode>.qrcode-dark {
-        display:none
-    }
-}
-

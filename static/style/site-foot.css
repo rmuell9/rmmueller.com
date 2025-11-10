@@ -13,7 +13,7 @@
 }
 
 .site-foot .fcolumns #qrcode>div {
-    margin-left: 5px;
+    margin-left: 4px;
     @media (max-width: 412px) {
         margin-left:0
     }
@@ -33,4 +33,22 @@
     #qrcode>.qrcode-dark {
         display:none
     }
+}
+
+.badges {
+    border-top: 2px solid var(--color-bor);
+    margin: 32px 0 0;
+    /* display: flex; */
+}
+
+.square-badge {
+    margin: 42px 0 0;
+    height: 34px;
+    width: 34px;
+}
+
+.rec-badge {
+    margin: 42px 0 0;
+    height: 34px;
+    width: 88px;
 }
