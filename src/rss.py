@@ -16,12 +16,46 @@ def generate_rss_feed(content_dir, dest_path, site_url, site_title,
     SubElement(channel, "description").text = site_description
     SubElement(channel, "language").text = "en-us"
     
+    # Read index.md to find linked posts
+    index_path = os.path.join(content_dir, 'index.md')
+    linked_posts = set()
+    try:
+        with open(index_path, 'r') as f:
+            index_content = f.read()
+            # Find all markdown links
+            import re
+            links = re.findall(r'\[.*?\]\((.*?)\)', index_content)
+            for link in links:
+                # Convert relative links to absolute paths
+                if not link.startswith(('http://', 'https://', 'mailto:')):
+                    # Remove .html extension if present
+                    if link.endswith('.html'):
+                        link = link[:-5]
+                    # Remove leading slash if present
+                    if link.startswith('/'):
+                        link = link[1:]
+                    linked_posts.add(link)
+    except Exception as e:
+        print(f"Error reading index.md: {e}")
+    
     # Collect all markdown files with metadata
     posts = []
     for root, dirs, files in os.walk(content_dir):
         for file in files:
             if file.endswith('.md'):
                 file_path = os.path.join(root, file)
+                
+                # Skip index.md itself
+                if file_path.endswith('index.md'):
+                    # Get relative path for checking
+                    rel_path = os.path.relpath(file_path, content_dir)
+                    rel_dir = os.path.dirname(rel_path)
+                    
+                    # Only skip if it's a header page (about, contact, etc)
+                    # but include if it's linked from the main index
+                    if rel_dir and rel_dir not in linked_posts:
+                        continue
+                
                 try:
                     with open(file_path, 'r') as f:
                         content = f.read()

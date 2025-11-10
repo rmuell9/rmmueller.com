@@ -6,3 +6,7 @@ I'm currently experimenting with site looks and features.
 
 - Implement multi-line code blocks
 - Implement LaTex blocks
+
+
+- [On Optimal Training](/training)
+- [Short Primer on Entropy](/entropy)
