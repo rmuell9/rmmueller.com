@@ -4,8 +4,11 @@ I'm currently experimenting with site looks and features.
 
 ## TODO
 
+- Implement custom block generation
 - Implement multi-line code blocks
+- Implement article blocks
 - Implement LaTex blocks
+- Optimize RSS feed
 
 
 - [On Optimal Training](/training)
