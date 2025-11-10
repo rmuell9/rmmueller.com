@@ -1,0 +1,40 @@
+.site-foot {
+    margin: 70px 0px 42px;
+    border-top: 2px solid var(--color-bor);
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+.site-foot .fcolumns {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+}
+
+.site-foot .fcolumns #qrcode>div {
+    margin-left: 7px;
+    @media (max-width: 412px) {
+        margin-left:0
+    }
+}
+
+.site-foot .fcolumns #info {
+    margin-top: 20px;
+    margin-right: 100px;
+}
+
+.site-foot .fcolumns #qrcode {
+    margin-top: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+    #qrcode>.qrcode-light {
+        display:none
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    #qrcode>.qrcode-dark {
+        display:none
+    }
+}

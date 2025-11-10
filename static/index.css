@@ -2,6 +2,7 @@
 @import url('style/glitch.css');
 @import url('style/posts.css');
 @import url('style/site-head.css');
+@import url('style/site-foot.css');
 
 body {
   background-color: var(--color-bg);
@@ -153,3 +154,16 @@ img {
 s {
     text-decoration-thickness: 2px;
 }
+
+@media (prefers-color-scheme: dark) {
+    #qrcode>.qrcode-light {
+        display:none
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    #qrcode>.qrcode-dark {
+        display:none
+    }
+}
+
