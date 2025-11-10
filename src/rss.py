@@ -72,6 +72,11 @@ def generate_rss_feed(content_dir, dest_path, site_url, site_title,
                     # Create URL from file path
                     rel_path = os.path.relpath(file_path, content_dir)
                     url_path = rel_path[:-3] + '.html'  # .md -> .html
+                    # Remove index.html from url_path
+                    if url_path.endswith('/index.html'):
+                        url_path = url_path[:-10]  # Remove /index.html
+                    elif url_path == 'index.html':
+                        url_path = ''
                     url = f"{site_url}/{url_path}".replace('\\', '/')
                     
                     posts.append({
