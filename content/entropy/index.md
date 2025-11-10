@@ -1,3 +1,3 @@
 # Short Primer on Entropy
 
-Informaion Theory vs. Physics
+#### One of the most important concepts in thermodynamics and information theory has a beautiful generalization

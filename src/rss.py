@@ -45,6 +45,10 @@ def generate_rss_feed(content_dir, dest_path, site_url, site_title,
             if file.endswith('.md'):
                 file_path = os.path.join(root, file)
                 
+                # Skip the main index.md file
+                if file_path == index_path:
+                    continue
+                
                 # Skip index.md itself
                 if file_path.endswith('index.md'):
                     # Get relative path for checking
@@ -90,17 +94,17 @@ def generate_rss_feed(content_dir, dest_path, site_url, site_title,
         SubElement(item, "pubDate").text = post['pub_date'].strftime(
             '%a, %d %b %Y %H:%M:%S GMT')
         
-        # Extract first paragraph as description
+        # Extract h4 content as description
         lines = post['content'].split('\n')
         description = ""
-        for line in lines[1:]:  # Skip title line
+        for i, line in enumerate(lines):
             line = line.strip()
-            if line and not line.startswith('#'):
-                description = line[:200] + "..." if len(line) > 200 else line
+            if line.startswith('#### '):
+                description = line[5:]  # Remove the #### prefix
                 break
         
-        SubElement(item, "description").text = description or post['title']
         SubElement(item, "guid").text = post['url']
+        SubElement(item, "description").text = description or post['title']
     
     # Write RSS file
     rss_string = tostring(rss_root, encoding='unicode')

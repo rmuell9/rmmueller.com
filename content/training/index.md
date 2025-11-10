@@ -1,3 +1,3 @@
 # On Optimal Training
 
-n=1
+#### Investigating the meaning of "n=1"
