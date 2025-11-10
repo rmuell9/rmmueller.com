@@ -1,5 +1,7 @@
 @import url('style/variables.css');
 @import url('style/glitch.css');
+@import url('style/posts.css');
+@import url('style/site-head.css');
 
 body {
   background-color: var(--color-bg);
@@ -42,60 +44,6 @@ footer {
 
 header {
     font-size: 1.20rem;
-}
-
-#navigation {
-    margin: 0 0 42px
-}
-
-@media (max-width: 500px) {
-    ul.navigation {
-        -moz-column-count:2;
-        column-count: 2
-    }
-}
-
-@media (min-width: 500px) {
-    ul.navigation {
-        -moz-column-count:3;
-        column-count: 3
-    }
-}
-
-@media (min-width: 700px) {
-    ul.navigation {
-        -moz-column-count:4;
-        column-count: 4
-    }
-}
-
-.site-head {
-    align-items: center;
-    border-bottom: 2px solid var(--color-bor);
-    display: block;
-    grid-template-columns: 1fr auto 1fr;
-    margin-bottom: 70px;
-}
-
-.site-head a {
-    display: inline-block;
-    unicode-bidi: isolate;
-}
-
-.logo-container:hover {
-    background-color: transparent;
-}
-
-.site-head a.active {
-    background-color: var(--color-a);
-    border-color: transparent;
-    color: var(--color-bg);
-}
-
-.site-head ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0px 0px 42px;
 }
 
 ul {
@@ -200,29 +148,6 @@ img {
     0% { opacity: 1; }
     50% { opacity: 0; }
     100% { opacity: 1; }
-}
-
-.logo-container {
-  border-bottom: none;
-  margin-left: -12px;
-  display: block;
-  height: 82px;
-  width: 82px;
-  position: relative;
-}
-
-.strip {
-  overflow: hidden;
-  position: relative;
-  background-image: url('/images/favicon.png');
-  background-size: 82px 82px;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-  image-rendering: pixelated;
-  image-rendering: -moz-crisp-edges;
-  image-rendering: crisp-edges;
-  width: 100%;
 }
 
 s {

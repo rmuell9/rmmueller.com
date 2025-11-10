@@ -10,6 +10,9 @@ I'm currently experimenting with site looks and features.
 - Implement LaTex blocks
 - Optimize RSS feed
 
+## ARTICLES
 
+{{< posts >}}
 - [On Optimal Training](/training)
 - [Short Primer on Entropy](/entropy)
+{{</ posts >}}

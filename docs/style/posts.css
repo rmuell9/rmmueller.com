@@ -1,0 +1,17 @@
+.posts {
+    display: block;
+}
+
+.posts ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.posts li {
+    margin-bottom: 20px;
+}
+
+.posts a {
+    font-size: 1.4rem;
+    border-bottom: 2px solid var(--color-a);
+}

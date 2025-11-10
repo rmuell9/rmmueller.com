@@ -142,10 +142,34 @@ def block_to_blocktype(block):
     return BlockType.PARAGRAPH
 
 
+def process_shortcodes(markdown):
+    pattern = r'{{<\s*(\w+)\s*>}}(.*?){{</\s*\1\s*>}}'
+    matches = re.findall(pattern, markdown, re.DOTALL)
+    processed = markdown
+    
+    for class_name, content in matches:
+        original = f'{{{{< {class_name} >}}}}{content}{{{{</ {class_name} >}}}}'
+        replacement = f'<div class="{class_name}">\n{content.strip()}\n</div>'
+        processed = processed.replace(original, replacement)
+    
+    return processed
+
+
 def markdown_to_html_node(markdown):
+    markdown = process_shortcodes(markdown)
     blocks = markdown_to_blocks(markdown)
     children = []
     for block in blocks:
+        if block.startswith('<div class='):
+            div_match = re.match(r'<div class="(\w+)">(.*?)</div>', block, 
+                                 re.DOTALL)
+            if div_match:
+                class_name, content = div_match.groups()
+                content_node = markdown_to_html_node(content.strip())
+                children.append(ParentNode("div", content_node.children, 
+                                         {"class": class_name}))
+                continue
+        
         blocktype = block_to_blocktype(block)
         if blocktype == BlockType.HEADING:
             level = block.count("#", 0, 6)
@@ -187,5 +211,4 @@ def extract_title(markdown):
         for line in markdown.split("\n"):
             if line[:2] == target:
                return line.lstrip(target)
-    # raise Exception("No title")
     return "Home"

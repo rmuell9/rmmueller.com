@@ -1,3 +1,19 @@
+.strip {
+  overflow: hidden;
+  position: relative;
+  background-image: url('/images/favicon.png');
+  background-size: 82px 82px;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  width: 100%;
+}
+
+/* ANIMATIONS */
+
 @keyframes glitch-5 {
   0.00%,
   33.33%,

@@ -8,7 +8,6 @@
     }
 }
 
-
 @media (prefers-color-scheme: dark) {
     :root {
         --color-primary: #cdd6f4;
@@ -19,13 +18,14 @@
     }
 }
 
-
 /* GENERAL VARIABLES */
+
 :root {
     --font: "JetbrainsMono Nerd Font", "Hack Nerd Font", "SF Mono", 
             "Monaco", "Cascadia Code", "Roboto Mono", "Fira Code", 
             "Source Code Pro", "Consolas", "Menlo", "DejaVu Sans Mono", 
             "Ubuntu Mono", "Courier New", monospace;
     --radius: 4px;
+    --logo: url('/images/favicon.png');
     --color-a: var(--color-primary);
 }
