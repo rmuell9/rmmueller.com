@@ -13,7 +13,7 @@
 }
 
 .site-foot .fcolumns #qrcode>div {
-    margin-left: 7px;
+    margin-left: 5px;
     @media (max-width: 412px) {
         margin-left:0
     }
