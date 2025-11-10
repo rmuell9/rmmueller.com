@@ -9,6 +9,7 @@
     display: flex;
     flex-wrap: wrap-reverse;
     width: 100%;
+    margin: 32px 0 0;
 }
 
 .site-foot .fcolumns #qrcode>div {
@@ -19,12 +20,7 @@
 }
 
 .site-foot .fcolumns #info {
-    margin-top: 20px;
     margin-right: 100px;
-}
-
-.site-foot .fcolumns #qrcode {
-    margin-top: 20px;
 }
 
 @media (prefers-color-scheme: dark) {
