@@ -78,7 +78,8 @@ def generate_rss_feed(content_dir, dest_path, site_url, site_title,
                         'title': title,
                         'url': url,
                         'pub_date': pub_date,
-                        'content': content
+                        'content': content,
+                        'rel_path': rel_path
                     })
                 except Exception as e:
                     print(f"Error processing {file_path}: {e}")
@@ -103,7 +104,13 @@ def generate_rss_feed(content_dir, dest_path, site_url, site_title,
                 description = line[5:]  # Remove the #### prefix
                 break
         
-        SubElement(item, "guid").text = post['url']
+        guid = SubElement(item, "guid", isPermaLink="false")
+        guid_path = post['rel_path']
+        if guid_path.endswith('/index.md'):
+            guid_path = guid_path[:-9] + '/'
+        elif guid_path == 'index.md':
+            guid_path = '/'
+        guid.text = guid_path
         SubElement(item, "description").text = description or post['title']
     
     # Write RSS file
