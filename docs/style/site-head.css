@@ -1,25 +1,25 @@
 #navigation {
-    margin: 0 0 42px
+    margin: 0 0 42px;
 }
 
 @media (max-width: 500px) {
     ul.navigation {
         -moz-column-count:2;
-        column-count: 2
+        column-count: 2;
     }
 }
 
 @media (min-width: 500px) {
     ul.navigation {
         -moz-column-count:3;
-        column-count: 3
+        column-count: 3;
     }
 }
 
 @media (min-width: 700px) {
     ul.navigation {
         -moz-column-count:4;
-        column-count: 4
+        column-count: 4;
     }
 }
 

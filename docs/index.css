@@ -18,10 +18,8 @@ body {
 }
 
 footer {
-    margin: 70px 0px 42px;
     border-top: 2px solid var(--color-bor);
 }
-
 
 header {
     font-size: 1.20rem;

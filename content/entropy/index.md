@@ -1,6 +1,9 @@
 # Short Primer on Entropy
 
-#### One of the most important concepts in thermodynamics and information theory has a beautiful generalization
+#### Why Information Theory is the most fundamental field of all
+
+![Short Primer on Entropy](/images/entropy.png)
+Composition VII (1913) - high entropy abstract art
 
 ### Shannon Entropy
 
@@ -15,3 +18,7 @@ Percentage share of each letter:
 Shannon entropy:
 
 `return -1 * sum([f * log(f, 2) for f in freqs])`
+
+{{< postfoot >}}
+**In Progress** Published on 11-09-25
+{{</ postfoot >}}
