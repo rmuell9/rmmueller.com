@@ -1,8 +1,5 @@
 # Quotes
 
-**Recommendation:** [La Rochefoucald - Maxims](https://www.goodreads.com/book/show/797329.Maxims)
-
-
 > Men in general are quick to believe that which they wish to be true.
 
 -Julius Caesar
@@ -18,6 +15,11 @@
 -Fredrich Nietzsche _The Will to Power_
 
 
+> The person who writes for fools is always sure of a large audience.
+
+-Arthur Schopenhauer
+
+
 > A mathematician is a device for turning coffee into theorems.
 
 -Paul Erdos
@@ -27,3 +29,12 @@
 
 -Horace
 
+
+> Man can do what he wills but he cannot will what he wills.
+
+-Arthur Schopenhauer
+
+
+> A person hears only what they understand.
+
+-Goethe
