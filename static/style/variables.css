@@ -28,4 +28,5 @@
     --radius: 4px;
     --logo: url('/images/favicon.png');
     --color-a: var(--color-primary);
+    --color-code: var(--color-primary);
 }

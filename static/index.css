@@ -32,6 +32,7 @@ ul {
 b {
   background-color: var(--color-a);
   color: var(--color-bg);
+  font-weight: 600;
 }
 
 h1,
@@ -79,11 +80,10 @@ a:hover {
 }
 
 code {
-  background-color: var(--color-code);
-  border-radius: var(--radius);
-  color: var(--color-a);
-  padding: 0.4em 0.6em;
   font-family: var(--font);
+  color: var(--color-code);
+  padding: 2px 6px;
+  border: 2.5px solid var(--color-code);
 }
 
 pre code {
