@@ -15,6 +15,5 @@ I'm currently experimenting with site looks and features.
 ## ARTICLES
 
 {{< posts >}}
-- [On Optimal Training](/training)
 - [Short Primer on Entropy](/entropy)
 {{</ posts >}}
