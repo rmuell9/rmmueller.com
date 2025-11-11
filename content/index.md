@@ -6,11 +6,11 @@ I'm currently experimenting with site looks and features.
 
 ## TODO
 
-- Implement custom block generation
+- ~~Implement custom block generation~~
 - Implement multi-line code blocks
 - Implement article blocks
 - Implement LaTex blocks
-- Optimize RSS feed
+- ~~Optimize RSS feed~~
 
 ## ARTICLES
 
