@@ -1,5 +1,11 @@
 # Quotes
 
+![Quotes](/images/quotes.png)
+
+ 
+
+ 
+
 > Men in general are quick to believe that which they wish to be true.
 
 -Julius Caesar
