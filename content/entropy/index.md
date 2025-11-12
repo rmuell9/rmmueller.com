@@ -30,16 +30,16 @@ __Binary Digit__ = 0 or 1
 
 **Bit = store of information**
 
-- log_2(n) bits of information in an event with n possible outcomes
+- log_2(n) bits of information in an event with n possible outcomes ([Why?](why/))
 - Intuitively: how many yes/no questions must I ask to know the outcome of a random event?
 
-__Example:__ Flipping a Coin:
+Example: __Flipping a Coin:__
 
 - Two possible outcomes: heads or tails
 - log_2(2) = 1 bit of information per outcome
 - "Is the outcome tails?" is False -> Heads; same for the inverse
 
-__Example:__ Rolling a Dice:
+Example: __Rolling a Dice:__
 
 - Six possible outcomes
 - log_2(6) = ~2.58 bits per outcome

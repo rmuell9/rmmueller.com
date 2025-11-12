@@ -1,19 +1,19 @@
 <!-- # Home -->
 
-This site is still being built, ~~getting onto HTTPS is maybe on the agenda.~~
+This site is still being built. You can think of this as me thinking in public.
+
 
 I'm currently experimenting with site looks and features.
 
 ## TODO
 
-- ~~Implement custom block generation~~
 - Implement multi-line code blocks
 - Implement article blocks
 - Implement LaTex blocks
-- ~~Optimize RSS feed~~
 
 ## ARTICLES
 
 {{< posts >}}
+- [Practical Consequences of Godel Incompleteness](/godel)
 - [Short Primer on Entropy](/entropy)
 {{</ posts >}}
