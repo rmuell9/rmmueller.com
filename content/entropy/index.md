@@ -7,6 +7,8 @@ Composition VII (1913) - high entropy abstract art
 
 ### What is Information Theory?
 
+[Formalized in the mid-20th century by Claude Shannon](https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf)
+
 The field of understanding the properties of data sources
 like how much "surprise" is in a source and how to package data such that
 communication contains only meaningful content.
@@ -38,6 +40,9 @@ __Example:__ Rolling a Dice:
 - "Is the outcome even?" is False and "1 or 3?" is False -> 5
 - "Is the outcome even?" is False and "1 or 3?" is True and "1?" is False -> 3
 - Why 2.58 bits makes sense: sometimes 2 questions are needed, sometimes 3 - but never more
+
+
+This is highly useful for understanding properties of **independent events**
 
 
 
