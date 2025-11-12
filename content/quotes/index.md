@@ -38,3 +38,11 @@
 > A person hears only what they understand.
 
 -Goethe
+
+> You are not really rich unless you can raise a legion.
+
+-Crassus
+
+> Academia is to knowledge what prostitution is to love.
+
+-Taleb
