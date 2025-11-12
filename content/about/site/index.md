@@ -5,7 +5,7 @@
 
 ### How does it exist?
 
-Through a [static site generator](https://github.com/rmuell9/static-site-generator)
+Through a [static site generator](https://github.com/rmuell9/pySSG)
 written in Python. One could pretentiously describe it as an isomorphism from
 markdown to html.
 
