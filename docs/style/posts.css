@@ -21,3 +21,12 @@
     padding-top: 21px;
     border-top: 2px solid var(--color-bor);
 }
+
+.blocky {
+    border-top: 2px solid var(--color-primary);
+    border-left: 2px solid var(--color-primary);
+    border-right: 2px solid var(--color-bor);
+    border-bottom: 2px solid var(--color-bor);
+    margin: 40px 0;
+    padding: 16px;
+}

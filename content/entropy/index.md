@@ -5,6 +5,12 @@
 ![Short Primer on Entropy](/images/entropy.png)
 Composition VII (1913) - high entropy abstract art
 
+{{< blocky >}}
+**TLDR:** It can be argued that Information Theory is the most fundamental field of all
+given that every physical law can be interpreted as an information processing algorithm. 
+This implies that reality is computational. 
+{{</ blocky >}}
+
 ### What is Information Theory?
 
 [Formalized in the mid-20th century by Claude Shannon](https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf)
