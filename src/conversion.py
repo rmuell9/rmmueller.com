@@ -107,7 +107,7 @@ def text_to_textnodes(text):
     code = split_nodes_delimiter(bold, "`", TextType.CODE)
     image = split_nodes_image(code)
     link = split_nodes_link(image)
-    italic = split_nodes_delimiter(link, "_", TextType.ITALIC)
+    italic = split_nodes_delimiter(link, "__", TextType.ITALIC)
     crossed = split_nodes_delimiter(italic, "~~", TextType.CROSSED)
     return crossed
 
