@@ -13,7 +13,7 @@
 
 > No natural humanity has ever existed yet... To be natural means, to dare to be as immoral as Nature is.
 
--Fredrich Nietzsche _The Will to Power_
+-Fredrich Nietzsche __The Will to Power__
 
 
 > The person who writes for fools is always sure of a large audience.

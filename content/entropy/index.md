@@ -30,19 +30,21 @@ __Binary Digit__ = 0 or 1
 __Example:__ Flipping a Coin:
 
 - Two possible outcomes: heads or tails
-- log_2(2) = 1 bit of information required
+- log_2(2) = 1 bit of information per outcome
 - "Is the outcome tails?" is False -> Heads; same for the inverse
 
 __Example:__ Rolling a Dice:
 
 - Six possible outcomes
-- log_2(6) = ~2.58 bits required
+- log_2(6) = ~2.58 bits per outcome
 - "Is the outcome even?" is False and "1 or 3?" is False -> 5
 - "Is the outcome even?" is False and "1 or 3?" is True and "1?" is False -> 3
 - Why 2.58 bits makes sense: sometimes 2 questions are needed, sometimes 3 - but never more
 
+You may be thinking: "What if I get lucky and guess the right outcome, first try?":
 
-This is highly useful for understanding properties of **independent events**
+**Information Theory is concerned with averages** - given an infinite amount of 
+__independent events__, an average of log_2(n) bits are contained in each outcome.
 
 
 
