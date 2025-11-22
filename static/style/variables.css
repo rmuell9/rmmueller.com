@@ -1,10 +1,10 @@
 @media (prefers-color-scheme: light) {
     :root {
         --color-primary: #333333;
+        --color-a: var(--color-primary);
+        --color-code: var(--color-primary);
         --color-bg: #f7f3e9;
-        --color-a: #e0a96d;
         --color-bor: #b8b8b8;
-        --color-code: #d3d3d3;
         --color-bigcode: #d3d3d3;
     }
 }
@@ -12,10 +12,10 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --color-primary: #cdd6f4;
+        --color-a: var(--color-primary);
+        --color-code: var(--color-primary);
         --color-bg: #1a1b26;
-        --color-a: #a78bfa;
         --color-bor: #3b4261;
-        --color-code: #3c3c42;
         --color-bigcode: #0f0f17;
     }
 }
@@ -30,6 +30,8 @@
     --font-code: "TX-02",monospace;
     --radius: 4px;
     --logo: url('/images/favicon.png');
-    --color-a: var(--color-primary);
-    --color-code: var(--color-primary);
+    --font-light: 200;
+    --font-normal: 400;
+    --font-bold: 600;
+    --font-heavy: 700;
 }

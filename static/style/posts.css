@@ -36,7 +36,7 @@
 .bigcode {
     font-family: var(--font-code);
     margin: 40px 0;
-    padding: 7px 8px 4px 8px;
+    padding: 0 8px 4px 8px;
     border-top: 2px solid var(--color-primary);
     border-left: 2px solid var(--color-primary);
     border-right: 2px solid var(--color-bigcode);

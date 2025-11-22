@@ -1,9 +1,8 @@
 # Short Primer on Entropy
 
-#### Why Information Theory is the most fundamental field of all
+##### Basic introduction to the theoretical foundation of communication
 
 ![Short Primer on Entropy](/images/entropy.png)
-Composition VII (1913) - high entropy abstract art
 
 {{< flashy >}}
 IN PROGRESS
@@ -55,17 +54,15 @@ __independent events__, an average of log_2(n) bits are contained in each outcom
 
 ### Shannon Entropy
 
-Count freq. of each letter in a string:
+Example Python implementation:
 
-`c = Counter(string)`
+{{< bigcode >}}
+def ShannonEntropy(s: string) -> float:
+    c = counter(s)
+    freqs = [c[i] / float(len(string)) for i in c]
 
-Percentage share of each letter:
-
-`freqs = [c[i] / float(len(string)) for i in c]`
-
-Shannon entropy:
-
-`return -1 * sum([f * log(f, 2) for f in freqs])`
+    return -1 * sum([f * log(f, 2) for f in freqs])
+{{</ bigcode >}}
 
 {{< postfoot >}}
 Published on 11-09-25 Updated on 11-12-25
