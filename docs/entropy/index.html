@@ -136,7 +136,7 @@
             </div>
         </header>
 
-        <script src="scripts/favicons.js"></script>
+        <script src="favicons.js"></script>
         <script>
         document.addEventListener("DOMContentLoaded", function(event) {
             favicons();
@@ -147,7 +147,7 @@
 Composition VII (1913) - high entropy abstract art</p><div class="flashy"><p>IN PROGRESS</p></div><h3>What is Information Theory?</h3><p><a href="https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf">Formalized in the mid-20th century by Claude Shannon</a></p><p>The field of understanding the properties of data sources
 like how much "surprise" is in a source and how to package data such that
 communication contains only meaningful content.</p><p><b>Entropy = average amount of surprise of a data source</b></p><h3>Binary Digit vs Bit</h3><p>There's a difference, okay!!</p><p><i>Binary Digit</i> = 0 or 1</p><p><b>Bit = store of information</b></p><ul><li>log_2(n) bits of information in an event with n possible outcomes (<a href="why/">Why?</a>)</li><li>Intuitively: how many yes/no questions must I ask to know the outcome of a random event?</li></ul><p>Example: <i>Flipping a Coin:</i></p><ul><li>Two possible outcomes: heads or tails</li><li>log_2(2) = 1 bit of information per outcome</li><li>"Is the outcome tails?" is False -> Heads; same for the inverse</li></ul><p>Example: <i>Rolling a Dice:</i></p><ul><li>Six possible outcomes</li><li>log_2(6) = ~2.58 bits per outcome</li><li>"Is the outcome even?" is False and "1 or 3?" is False -> 5</li><li>"Is the outcome even?" is False and "1 or 3?" is True and "1?" is False -> 3</li><li>Why 2.58 bits makes sense: sometimes 2 questions are needed, sometimes 3 - but never more</li></ul><p>You may be thinking: "What if I get lucky and guess the right outcome, first try?":</p><p><b>Information Theory is concerned with averages</b> - given an infinite amount of 
-<i>independent events</i>, an average of log_2(n) bits are contained in each outcome.</p><h3>Shannon Entropy</h3><p>Count freq. of each letter in a string:</p><p><code>c = Counter(string)</code></p><p>Percentage share of each letter:</p><p><code>freqs = [c[i] / float(len(string)) for i in c]</code></p><p>Shannon entropy:</p><p><code>return -1 * sum([f * log(f, 2) for f in freqs])</code></p><div class="postfoot"><p><b>In Progress</b> Published on 11-09-25 Updated on 11-12-25</p></div></div></article>
+<i>independent events</i>, an average of log_2(n) bits are contained in each outcome.</p><h3>Shannon Entropy</h3><p>Count freq. of each letter in a string:</p><p><code>c = Counter(string)</code></p><p>Percentage share of each letter:</p><p><code>freqs = [c[i] / float(len(string)) for i in c]</code></p><p>Shannon entropy:</p><p><code>return -1 * sum([f * log(f, 2) for f in freqs])</code></p><div class="postfoot"><p>Published on 11-09-25 Updated on 11-12-25</p></div></div></article>
 
     </body>
 

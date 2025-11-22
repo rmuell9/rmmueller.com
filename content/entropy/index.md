@@ -68,5 +68,5 @@ Shannon entropy:
 `return -1 * sum([f * log(f, 2) for f in freqs])`
 
 {{< postfoot >}}
-**In Progress** Published on 11-09-25 Updated on 11-12-25
+Published on 11-09-25 Updated on 11-12-25
 {{</ postfoot >}}

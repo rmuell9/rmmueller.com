@@ -6,5 +6,5 @@ IN PROGRESS
 
 
 {{< postfoot >}}
-**In Progress** Published on 11-12-25
+Published on 11-12-25
 {{</ postfoot >}}

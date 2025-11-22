@@ -1,4 +1,5 @@
 @import url('blinking.css');
+
 .posts {
     display: block;
 }
@@ -13,7 +14,7 @@
 }
 
 .posts a {
-    font-size: 1.4rem;
+    font-size: 1rem;
     border-bottom: 2px solid var(--color-a);
 }
 
