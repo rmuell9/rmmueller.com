@@ -1,7 +1,7 @@
 <!-- # Home -->
 
 {{< blocky >}}
-Welcome to my sight, it is still under construction.
+Welcome to my site, it is still under construction.
 {{</ blocky >}}
 
 
