@@ -15,7 +15,7 @@ Right now I'm working on
 
 If you would like to work together then [contact me](/contact/)
 
-## About This Site
+### About This Site
 
 Created through a [static site generator](https://github.com/rmuell9/pySSG)
 written in Python. One could pretentiously describe it as an isomorphism from
