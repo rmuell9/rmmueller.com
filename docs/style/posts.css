@@ -1,3 +1,4 @@
+@import url('blinking.css');
 .posts {
     display: block;
 }
@@ -28,7 +29,7 @@
     border-right: 2px solid var(--color-bor);
     border-bottom: 2px solid var(--color-bor);
     margin: 40px 0;
-    padding: 8px;
+    padding: 10px 16px;
 }
 
 .bigcode {
@@ -42,4 +43,11 @@
     background-color: var(--color-bigcode);
     overflow-x: auto;
     white-space: pre;
+}
+
+.flashy {
+    animation: bg-blink-animation .9s infinite;
+    border: 2px solid #e7a15a;
+    margin: 40px 0;
+    padding: 10px 16px;
 }

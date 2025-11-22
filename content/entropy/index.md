@@ -5,9 +5,9 @@
 ![Short Primer on Entropy](/images/entropy.png)
 Composition VII (1913) - high entropy abstract art
 
-{{< blocky >}}
-IM STILL WRITING THIS ARTICLE
-{{</ blocky >}}
+{{< flashy >}}
+IN PROGRESS
+{{</ flashy >}}
 
 ### What is Information Theory?
 

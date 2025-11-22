@@ -1,15 +1,9 @@
 <!-- # Home -->
 
-This site is still being built. You can think of this as me thinking in public.
+{{< blocky >}}
+Welcome to my sight, it is still under construction.
+{{</ blocky >}}
 
-
-I'm currently experimenting with site looks and features.
-
-## TODO
-
-- ~~Implement multi-line code blocks~~
-- Implement article blocks
-- Implement LaTex blocks
 
 ## ARTICLES
 
@@ -17,9 +11,3 @@ I'm currently experimenting with site looks and features.
 - [Practical Consequences of Godel Incompleteness](/godel)
 - [Short Primer on Entropy](/entropy)
 {{</ posts >}}
-
-
-{{< bigcode >}}
-while True:
-    print("hello world")
-{{</ bigcode >}}
