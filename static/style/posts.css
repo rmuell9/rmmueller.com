@@ -28,5 +28,18 @@
     border-right: 2px solid var(--color-bor);
     border-bottom: 2px solid var(--color-bor);
     margin: 40px 0;
-    padding: 16px;
+    padding: 8px;
+}
+
+.bigcode {
+    font-family: var(--font-code);
+    margin: 40px 0;
+    padding: 7px 8px 4px 8px;
+    border-top: 2px solid var(--color-primary);
+    border-left: 2px solid var(--color-primary);
+    border-right: 2px solid var(--color-bigcode);
+    border-bottom: 2px solid var(--color-bigcode);
+    background-color: var(--color-bigcode);
+    overflow-x: auto;
+    white-space: pre;
 }

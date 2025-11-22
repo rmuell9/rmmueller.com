@@ -5,6 +5,7 @@
         --color-a: #e0a96d;
         --color-bor: #b8b8b8;
         --color-code: #d3d3d3;
+        --color-bigcode: #d3d3d3;
     }
 }
 
@@ -15,6 +16,7 @@
         --color-a: #a78bfa;
         --color-bor: #3b4261;
         --color-code: #3c3c42;
+        --color-bigcode: #0f0f17;
     }
 }
 
@@ -25,6 +27,7 @@
             "Monaco", "Cascadia Code", "Roboto Mono", "Fira Code", 
             "Source Code Pro", "Consolas", "Menlo", "DejaVu Sans Mono", 
             "Ubuntu Mono", "Courier New", monospace;
+    --font-code: "TX-02",monospace;
     --radius: 4px;
     --logo: url('/images/favicon.png');
     --color-a: var(--color-primary);
