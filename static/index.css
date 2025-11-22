@@ -18,6 +18,12 @@ body {
     margin-right: auto;
 }
 
+@media (max-width: 500px) {
+    body {
+        font-size: 0.5em;
+    }
+}
+
 ul {
     list-style-type: square;
 }
@@ -95,13 +101,17 @@ h6 {
 
 a {
     color: var(--color-a);
-    border-bottom: 2px solid var(--color-a);
-    text-decoration: none;
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration-color: var(--color-primary);
+    text-decoration-style: solid;
+    text-decoration-skip-ink: all;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
 }
 
 a:hover {
     background-color: var(--color-a);
-    border-color: transparent;
     color: var(--color-bg);
 }
 

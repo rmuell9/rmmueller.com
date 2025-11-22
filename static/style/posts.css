@@ -18,6 +18,12 @@
     border-bottom: 2px solid var(--color-a);
 }
 
+@media (max-width: 500px) {
+    .posts a {
+        font-size: 0.5em;
+    }
+}
+
 .postfoot {
     margin-top: 42px;
     padding-top: 21px;

@@ -6,6 +6,13 @@ footer {
     font-size: 0.8rem;
 }
 
+@media (max-width: 500px) {
+    footer {
+        font-size: 0.4em;
+    }
+}
+
+
 .fcolumns {
     display: flex;
     flex-wrap: wrap-reverse;
@@ -13,7 +20,7 @@ footer {
     margin: 32px 0 0;
 }
 
-.fcolumns img {
+footer img {
     margin: 0;
 }
 
