@@ -22,6 +22,7 @@
     margin-top: 42px;
     padding-top: 21px;
     border-top: 2px solid var(--color-bor);
+    white-space: pre;
 }
 
 .blocky {

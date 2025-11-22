@@ -1,11 +1,4 @@
-<!-- # Home -->
-
-{{< blocky >}}
-Welcome to my site, it is still under construction.
-{{</ blocky >}}
-
-
-## ARTICLES
+# Math
 
 {{< posts >}}
 - [Point-Set Topology Overview](/set-topology)

@@ -1,4 +1,4 @@
-# Intuitive Godel Incompleteness
+# Title
 
 {{< flashy >}}
 IN PROGRESS
@@ -6,6 +6,5 @@ IN PROGRESS
 
 
 {{< postfoot >}}
-Published on 11-12-25
-Tags: [Math](/tag/math)
+Published on 11-22-25
 {{</ postfoot >}}

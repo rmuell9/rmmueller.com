@@ -1,4 +1,4 @@
-# Intuitive Godel Incompleteness
+# Point-Set Topology Overview
 
 {{< flashy >}}
 IN PROGRESS
@@ -6,6 +6,6 @@ IN PROGRESS
 
 
 {{< postfoot >}}
-Published on 11-12-25
+Published on 11-22-25
 Tags: [Math](/tag/math)
 {{</ postfoot >}}

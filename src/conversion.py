@@ -176,11 +176,7 @@ def markdown_to_html_node(markdown):
             text = block.lstrip("# ").strip()
             textnodes = text_to_textnodes(text)
             htmlnodes = [text_node_to_html_node(node) for node in textnodes]
-            if level == 1:
-                children.append(ParentNode("h1", htmlnodes, 
-                                         {"class": "post-content-title"}))
-            else:
-                children.append(ParentNode(f"h{level}", htmlnodes))
+            children.append(ParentNode(f"h{level}", htmlnodes))
         elif blocktype == BlockType.CODE:
             text = block.strip("```").strip()
             children.append(ParentNode("pre", [ParentNode("code", 

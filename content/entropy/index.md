@@ -65,5 +65,6 @@ def ShannonEntropy(s: string) -> float:
 {{</ bigcode >}}
 
 {{< postfoot >}}
-Published on 11-09-25 Updated on 11-12-25
+Published on 11-09-25 Updated on 11-22-25
+Tags: [Math](/tag/math)
 {{</ postfoot >}}

@@ -1,14 +1,12 @@
-.post-content-title:after {
-    animation: blink-animation .9s infinite;
-    content: "█";
-    color: var(--color-primary);
-    padding-left: 2px;
-}
-
 @keyframes blink-animation {
     0% { opacity: 1; }
     50% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
 
 @keyframes bg-blink-animation {
