@@ -1,25 +1,26 @@
-.site-foot {
+footer {
+    border-top: 2px solid var(--color-bor);
     margin: 42px 0px 42px;
     border-top: 2px solid var(--color-bor);
     text-align: left;
     font-size: 0.8rem;
 }
 
-.site-foot .fcolumns {
+.fcolumns {
     display: flex;
     flex-wrap: wrap-reverse;
     width: 100%;
     margin: 32px 0 0;
 }
 
-.site-foot .fcolumns #qrcode>div {
+.fcolumns #qrcode>div {
     margin-left: 4px;
     @media (max-width: 412px) {
         margin-left:0
     }
 }
 
-.site-foot .fcolumns #info {
+.fcolumns #info {
     margin-right: 100px;
 }
 

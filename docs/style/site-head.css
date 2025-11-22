@@ -1,5 +1,10 @@
-#navigation {
-    margin: 0 0 42px;
+header {
+    font-size: 1rem;
+    align-items: center;
+    display: block;
+    border-bottom: 2px solid var(--color-bor);
+    margin-bottom: 70px;
+    grid-template-columns: 1fr auto 1fr;
 }
 
 @media (max-width: 500px) {
@@ -23,29 +28,37 @@
     }
 }
 
-.site-head {
-    align-items: center;
-    border-bottom: 2px solid var(--color-bor);
-    display: block;
-    grid-template-columns: 1fr auto 1fr;
-    margin-bottom: 70px;
-}
-
-.site-head a {
-    display: inline-block;
-    unicode-bidi: isolate;
-}
-
-.site-head a.active {
-    background-color: var(--color-a);
-    border-color: transparent;
-    color: var(--color-bg);
-}
-
-.site-head ul {
+ul.navigation {
   list-style-type: none;
   padding: 0;
   margin: 0px 0px 42px;
+}
+
+ul.navigation>li {
+    display: block;
+    margin-bottom: 4px;
+}
+
+ul.navigation>li>a {
+    display: block;
+    unicode-bidi: isolate;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 25px;
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration-color: var(--color-primary);
+    text-decoration-style: solid;
+    text-decoration-skip-ink: all;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+ul.navigation>li>a.active {
+    background-color: var(--color-a);
+    border-color: transparent;
+    color: var(--color-bg);
 }
 
 /* LOGO */

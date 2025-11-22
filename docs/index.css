@@ -17,14 +17,6 @@ body {
     margin-right: auto;
 }
 
-footer {
-    border-top: 2px solid var(--color-bor);
-}
-
-header {
-    font-size: 1rem;
-}
-
 ul {
     list-style-type: square;
 }
