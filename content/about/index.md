@@ -2,24 +2,21 @@
 
 ![About](/images/gldcoast.png)
 
-My broad career interest is implementing leading-edge quantitative and scientific theory
-in industry. In application this means being involved with technology and proprietary trading, or related.
+My main interest right now is Pure Mathematics. I am focusing on the subfields of [Differential Geometry](https://en.wikipedia.org/wiki/Differential_geometry) and [Topology](https://en.wikipedia.org/wiki/Topology).
+However I am not yet commited to any graduate program pipelines.
 
+When I need a break, I'm also into philosophy and building interesting things (some on my [GitHub](https://github.com/rmuell9)).
 
-Right now I'm working on
+In the past I was a BJJ competitor and Muay Thai recreationalist.
 
-- [Topology](https://a.co/d/6HTIRlD)
-- [Modern gravitation](https://a.co/d/0vBQorI)
-- [Bitcoin whitepaper implementaton](https://github.com/rmuell9/rustbtc/)
-- [Linux](https://github.com/rmuell9/linux)
-
-If you would like to work together then [contact me](/contact/)
+If you got here from LinkedIn (or related), all of this is secondary to my passion of providing shareholder value.
 
 ### About This Site
 
+Feel free to steal any feature on this site from the [source code](https://github.com/rmuell9/rmmueller.com).
+
 Created through a [static site generator](https://github.com/rmuell9/pySSG)
-written in Python. One could pretentiously describe it as an isomorphism from
-markdown to html.
+written in Python.
 
 The title on the tab bar changes because there is a 
 [JavaScript program](https://github.com/rmuell9/rmmueller.com/blob/main/static/favicons.js) 
