@@ -5,7 +5,7 @@
 ### About Me
 
 My main interest right now is Pure Mathematics. I am focusing on the subfields of [Differential Geometry](https://en.wikipedia.org/wiki/Differential_geometry) and [Topology](https://en.wikipedia.org/wiki/Topology).
-However I am not yet commited to any graduate program pipelines.
+However I am not yet committed to any graduate program pipelines.
 
 When I need a break, I'm also into philosophy and building interesting things (some on my [GitHub](https://github.com/rmuell9)).
 
