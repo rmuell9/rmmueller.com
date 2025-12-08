@@ -147,6 +147,8 @@ blockquote {
     border-left: 4px solid var(--color-a);
     padding-left: 2em;
     margin-left: 0;
+    margin-top: 50px;
+    margin-bottom: 25px;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     padding-right: 0.5em;

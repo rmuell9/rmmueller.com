@@ -9,7 +9,7 @@
 
 - Understanding LLMs better by [building an LLM from scratch](https://github.com/rmuell9/buildLLM)
 
-- Replacing all online (subscription) services with Raspberry Pi programs
+- Replacing all (online) subscription services with Raspberry Pi programs
 
 {{< postfoot >}}
 Updated on 12-06-25
