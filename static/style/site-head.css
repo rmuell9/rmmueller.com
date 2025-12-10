@@ -64,6 +64,8 @@ ul.navigation>li>a.active {
 /* LOGO */
 
 .logo-container {
+  background-image: url('/images/favicon.png');
+  background-size: 82px 82px;
   border-bottom: none;
   margin-left: -12px;
   display: block;
