@@ -8,7 +8,7 @@ function favicons () {
 	this.services = {
 
         gsearch1: () => {
-            let title = "i love Matthew Mueller - Google Search"
+            let title = "i love rmmueller.com - Google Search"
 			let favicon = "/images/favicons/google.ico";
 			return {
 	  			title, favicon
@@ -31,35 +31,15 @@ function favicons () {
 			}
         },
 
-		/* Wikipedia */
-		wikipedia: () => {
-			let title = "Wikipedia";
-			let favicon = "/images/favicons/wikipedia.ico";
-			return {
-	  			title, favicon
-			}
-		},
-
-		/* Facebook, your grandma is most likely here */
-		facebook: () => {
-			/* Pick a random notification number between 1 and 100 */
-			let count = Math.round(Math.random() * 99) + 1;
-			let title = "(" + count + ") Facebook";
-			let favicon = "/images/favicons/facebook.ico";
-			return {
-				title, favicon
-			}
-		},
-		/* Instagram */
-		instagram: () => {
-			/* Pick a random notification number between 1 and 100 */
-			let count = Math.round(Math.random() * 99) + 1;
-			let title = "(" + count + ") Instagram";
-			let favicon = "/images/favicons/instagram.png";
-			return {
-				title, favicon
-			}
-		}
+		// facebook: () => {
+		// 	/* Pick a random notification number between 1 and 100 */
+		// 	let count = Math.round(Math.random() * 99) + 1;
+		// 	let title = "(" + count + ") Facebook";
+		// 	let favicon = "/images/favicons/facebook.ico";
+		// 	return {
+		// 		title, favicon
+		// 	}
+		// },
 	}
 
 	/* Those "services" are enabled, which means the web browser tab can change
@@ -68,9 +48,6 @@ function favicons () {
         'fbi',
         'gsearch1',
         'gsearch2',
-		'instagram',
-		'facebook',
-		'wikipedia'
 	];
 
 	/* Initialization function, checks if the web browser has the specified event
