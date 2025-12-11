@@ -13,7 +13,6 @@
 ### Publications
 
 - [Paged Out](https://pagedout.institute/)
-- [tmpout](https://tmpout.sh/)
 
 ### General
 
