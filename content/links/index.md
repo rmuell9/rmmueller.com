@@ -2,20 +2,13 @@
 
 #### Aggregate of my frequently visited internet destinations
 
+![Links](/images/chinight.png)
+
 ### News
 
 - [Hacker News](https://news.ycombinator.com/)
 - [Lobsters](https://lobste.rs/)
 - [Spike News](https://spike.news/) (Aggregator)
-
-### People
-
-People that do cool work, credit to these guys.
-
-- [geohot](https://geohot.github.io//blog/)
-- [karpathy](https://karpathy.bearblog.dev/blog/)
-- [drkhsh](https://drkhsh.at/)
-- [マリウス](https://xn--gckvb8fzb.com/)
 
 ### Publications
 
@@ -26,6 +19,15 @@ People that do cool work, credit to these guys.
 
 - [BjjShare](https://space.bilibili.com/81305729)
 - [Math Overflow](https://mathoverflow.net)
+
+### People
+
+Credit to these guys.
+
+- [geohot](https://geohot.github.io//blog/)
+- [karpathy](https://karpathy.bearblog.dev/blog/)
+- [drkhsh](https://drkhsh.at/)
+- [マリウス](https://xn--gckvb8fzb.com/)
 
 
 
