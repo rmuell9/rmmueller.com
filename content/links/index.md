@@ -18,7 +18,6 @@
 
 - [BjjShare](https://space.bilibili.com/81305729)
 - [Math Overflow](https://mathoverflow.net)
-- [Munkres Resource](https://dbfin.com/topology/munkres/)
 
 ### People
 
