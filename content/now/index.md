@@ -13,5 +13,5 @@
 - ~~Replacing all (online) subscription services with Raspberry Pi programs~~
 
 {{< postfoot >}}
-Updated on 12-06-25
+Updated on 12-20-25
 {{</ postfoot >}}
