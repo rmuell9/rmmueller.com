@@ -13,6 +13,7 @@
 ### Publications
 
 - [Paged Out](https://pagedout.institute/)
+- [NON-ZERO-SUM GAMES](https://nonzerosum.games/)
 
 ### General
 
@@ -29,5 +30,5 @@
 
 
 {{< postfoot >}}
-Updated on 12-11-25
+Updated on 12-31-25
 {{</ postfoot >}}
