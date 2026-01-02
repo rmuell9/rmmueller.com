@@ -78,5 +78,5 @@ def main():
     public("static/")
     generate_page_rec("content/", "template.html", "docs/", basepath)
     rss.generate_rss_feed("content/", "docs/index.xml", "https://rmmueller.com", 
-                 "rmmueller", "Articles")
+                 "Mueller Blog", "Articles")
 main()
