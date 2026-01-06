@@ -19,6 +19,7 @@
 
 - [BjjShare](https://space.bilibili.com/81305729)
 - [Math Overflow](https://mathoverflow.net)
+- [Linkhut](https://ln.ht/~rmuell9)
 
 ### People
 
@@ -30,5 +31,5 @@
 
 
 {{< postfoot >}}
-Updated on 12-31-25
+Updated on 1-06-26
 {{</ postfoot >}}
