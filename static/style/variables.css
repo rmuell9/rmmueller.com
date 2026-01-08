@@ -8,15 +8,14 @@
         --color-bigcode: #d3d3d3;
     }
 }
-
 @media (prefers-color-scheme: dark) {
     :root {
-        --color-primary: #cdd6f4;
+        --color-primary: #e0e0e0;
         --color-a: var(--color-primary);
         --color-code: var(--color-primary);
-        --color-bg: #1a1b26;
-        --color-bor: #3b4261;
-        --color-bigcode: #0f0f17;
+        --color-bg: #0a0a0a;
+        --color-bor: #333333;
+        --color-bigcode: #000000;
     }
 }
 
