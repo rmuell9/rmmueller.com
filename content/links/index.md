@@ -26,7 +26,6 @@
 - [geohot](https://geohot.github.io//blog/)
 - [karpathy](https://karpathy.bearblog.dev/blog/)
 - [drkhsh](https://drkhsh.at/)
-- [マリウス](https://xn--gckvb8fzb.com/)
 
 
 
