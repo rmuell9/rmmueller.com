@@ -48,3 +48,7 @@
 > Academia is to knowledge what prostitution is to love.
 
 -Taleb
+
+> The true voyage of discovery consists not of going to new places, but of having a new pair of eyes.
+
+-Marcel Proust
