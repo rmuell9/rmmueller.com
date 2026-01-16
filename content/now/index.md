@@ -2,15 +2,14 @@
 
 ##### What i'm working on now
 
-- Main "learning" focuses: algebraic topology, manifold theory, and some mereology
+- Main areas of focus: general relativity, topological manifolds, algebraic topology, and mereology
 
-- Understanding languages better by [building an interpreter in Go](https://github.com/rmuell9/goInterpreter)
+- Understanding language design by [building interprets and compilers](https://github.com/rmuell9/goInterpreter)
 
-- Understanding LLMs better by [building an LLM from scratch](https://github.com/rmuell9/buildLLM)
+- Machine learning: [building an LLM from scratch](https://github.com/rmuell9/buildLLM) and mastering XGBoost on Kaggle
 
-- Rewritting my favorite programs I use in Linux - [power notifications](https://github.com/rmuell9/PyPower)
 
 
 {{< postfoot >}}
-Updated on 12-31-25
+Updated on 1-16-26
 {{</ postfoot >}}

@@ -8,7 +8,7 @@ function favicons () {
 	this.services = {
 
         gsearch1: () => {
-            let title = "i love rmmueller.com - Google Search"
+            let title = "what is punycode? - Google Search"
 			let favicon = "/images/favicons/google.ico";
 			return {
 	  			title, favicon
