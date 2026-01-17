@@ -144,7 +144,7 @@ pre {
 
 blockquote {
     color: var(--color-a);
-    border-left: 4px solid var(--color-a);
+    border-left: 4px solid var(--color-quote);
     padding-left: 2em;
     margin-left: 0;
     margin-top: 50px;
